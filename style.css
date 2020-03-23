@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color:#F9F6F1;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+
+}
+.menu__logo{
+    display: flex;
+    justify-content: space-between;
+
+}
+.menu__link{
+    font-size: 14px;
+    padding:61px 0;
+
+}
+.menu__basket{
+    padding-top: 61px;
+}
+.menu__logo-text{
+    font-size: 24px;
+    padding-top: 56px;
+    padding-left: 20px;
+}
+.menu__logo-img{
+    padding: 56px 0;
+}
+.main-screen{
+    background-color:#F9F6F1;
+    margin-top: 122px;
+    padding: 120px 0;
+}
+.main-screen__description{
+    font-size: 30px;
+
+}
+.main-screen__title{
+    font-size: 55px;
+    padding: 42px 0;
+}
+.my-button{
+    background-color:#D7B399;
+    border-color: #D7B399;
+    border-radius: 0;
+}
+.main-screen__img{
+    background-image: url("shoes.png");
+    height: 377px;
+}
+.main-screen__img-old-price{
+    font-size: 24px;
+    line-height: 29px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-decoration-line: line-through;
+}
+.main-screen__img-new-price{
+    color: #D84033;
+    font-size: 42px;
+    text-align: right;
+}
+.main-screen__slider{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 120px;
+}
+.main-screen__slider-blok{
+    width: 40px;
+    height: 7px;
+    background: #CECECE;
+    margin-right: 10px;
+}
+.main-screen__slider-blok-activ{
+    background: #D7B399;
+}

@@ -1,60 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title> online-store</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>online-store</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="style.css" >
-
-</head>
-<body>
-<div class="header">
-    <div class="container header__container">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container header__container">
         <div class="menu">
-            <div class="menu__link">Для мужчин</div>
-            <div class="menu__link">Для женщин</div>
-            <div class="menu__link">Для детей</div>
-            <div class="menu__logo">
-                <div class="menu__logo-img">
-                    <img src="logo-img.png"/>
-                </div>
-                <div class="menu__logo-text">THE LOOP</div>
+          <div class="menu__link">Для мужчин</div>
+          <div class="menu__link">Для женщин</div>
+          <div class="menu__link">Для детей</div>
+          <div class="menu__logo">
+            <div class="menu__logo-img">
+              <img src="img/logo-img.png" />
             </div>
-            <div class="menu__link">Оплата</div>
-            <div class="menu__link">Доставка</div>
-            <div class="menu__basket">
-                <img class="menu__basket-basket" src="basket.png"/>
-                <img class="menu__basket-number" src="number.png"/>
-            </div>
+            <div class="menu__logo-text">THE LOOP</div>
+          </div>
+          <div class="menu__link">Оплата</div>
+          <div class="menu__link">Доставка</div>
+          <div class="menu__basket">
+            <img class="menu__basket-basket" src="img/basket.png" />
+            <img class="menu__basket-number" src="img/number.png" />
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<section class="main-screen">
-    <div class="container">
+    <section class="main-screen">
+      <div class="container">
         <div class="row">
-            <div class="col-6">
-                <div class="main-screen__description">Зимняя распродажа</div>
-                <div class="main-screen__title">СКИДКИ ДО 90%</div>
-                <button type="button" class="btn btn-lg btn-primary my-button">СМОТРЕТЬ МОДЕЛИ</button>
+          <div class="col-6">
+            <div class="main-screen__description">Зимняя распродажа</div>
+            <div class="main-screen__title">СКИДКИ ДО 90%</div>
+            <button type="button" class="btn btn-lg btn-primary my-button">
+              СМОТРЕТЬ МОДЕЛИ
+            </button>
+          </div>
+          <div class="col-6 main-screen__img">
+            <div class="main-screen__img-old-price">9 900 ₽</div>
+            <div class="main-screen__img-new-price">1 900 ₽</div>
+          </div>
+        </div>
+      </div>
+      <div class="main-screen__slider">
+        <div class="main-screen__slider-blok"></div>
+        <div
+          class="main-screen__slider-blok main-screen__slider-blok-activ"
+        ></div>
+        <div class="main-screen__slider-blok"></div>
+        <div class="main-screen__slider-blok"></div>
+      </div>
+    </section>
+    <div class="free-shiping">
+      <div class="conteiner">
+        <h2 class="free-shiping__title">БЕСПЛАТНАЯ ДОСТАВКА ОТ 3000₽</h2>
+        <p class="free-shiping__description">
+          Сделайте заказ и получите подарок!
+        </p>
+      </div>
+    </div>
+    <div class="collections">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 collections__men">
+            <div class="collections__men-text">
+              <h2 class="collections__men-text-title">МУЖСКАЯ КОЛЛЕКЦИЯ</h2>
+              <p class="collections__men-text-description">
+                Обувь, полуверы, костюмы
+              </p>
+              <button
+                type="button"
+                class="btn btn-lg btn-primary my-button button-collections"
+              >
+                →
+              </button>
             </div>
-            <div class="col-6 main-screen__img">
-                <div class="main-screen__img-old-price">9 900 ₽ </div>
-                <div class="main-screen__img-new-price">1 900 ₽ </div>
+            <img class="collections__men-img" src="img/men.png" />
+          </div>
+          <div class="col-6 collections__men">
+            <div class="collections__men-text">
+              <h2 class="collections__men-text-title">ЖЕНСКАЯ КОЛЛЕКЦИЯ</h2>
+              <p class="collections__men-text-description">
+                Обувь, полуверы, костюмы
+              </p>
+              <button
+                type="button"
+                class="btn btn-lg btn-primary my-button button-collections"
+              >
+                →
+              </button>
+            </div>
+            <img class="collections__men-img" src="img/woman.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="catalog">
+      <div class="container">
+        <div class="row">
+          <div class="col-3 catalog__dress1">
+            <p class="catalog__dress-text">ПЛАТЬЯ</p>
+          </div>
+          <div class="col-3 catalog__dress2">
+            <p class="catalog__dress-text">ПЛАТЬЯ</p>
+          </div>
+          <div class="col-3 catalog__dress1">
+            <p class="catalog__dress-text">ПЛАТЬЯ</p>
+          </div>
+          <div class="col-3 catalog__dress2">
+            <p class="catalog__dress-text">ПЛАТЬЯ</p>
+          </div>
+          <div class="col-3 catalog__dress1">
+            <p class="catalog__dress-text">ПЛАТЬЯ</p>
+          </div>
+          <div class="col-3 catalog__dress2">
+            <p class="catalog__dress-text">ПЛАТЬЯ</p>
+          </div>
+          <div class="col-3 catalog__dress1">
+            <p class="catalog__dress-text">ПЛАТЬЯ</p>
+          </div>
+          <div class="col-3 catalog__dress2">
+            <p class="catalog__dress-text">ПЛАТЬЯ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="new-items">
+      <div class="container new-items__container">
+        <h2 class="new-items__title">Новые модели</h2>
+          <div class="row">
+            <div class="col-3 new-items__cards">
+              <img class="new-items__cards-model" src="img/model.png" />
+              <h3 class="new-items__cards-title">Коктейльное платье</h3>
+              <h3 class="new-items__cards-price">₽ 40 000</h3>
+            </div>
+            <div class="col-3 new-items__cards">
+              <img class="new-items__cards-model" src="img/model.png" />
+              <h3 class="new-items__cards-title">Коктейльное платье</h3>
+              <h3 class="new-items__cards-price">₽ 40 000</h3>
+            </div>
+            <div class="col-3 new-items__cards">
+              <img class="new-items__cards-model" src="img/model.png" />
+              <h3 class="new-items__cards-title">Коктейльное платье</h3>
+              <h3 class="new-items__cards-price">₽ 40 000</h3>
+            </div>
+            <div class="col-3 new-items__cards">
+              <img class="new-items__cards-model" src="img/model.png" />
+              <h3 class="new-items__cards-title">Коктейльное платье</h3>
+              <h3 class="new-items__cards-price">₽ 40 000</h3>
             </div>
         </div>
+        <button
+          type="button"
+          class="btn btn-lg btn-primary my-button button-new-items"
+        >
+          ВСЕ МОДЕЛИ →
+        </button>
+      </div>
     </div>
-    <div class="main-screen__slider">
-        <div class="main-screen__slider-blok"></div>
-        <div class="main-screen__slider-blok main-screen__slider-blok-activ"></div>
-        <div class="main-screen__slider-blok"></div>
-        <div class="main-screen__slider-blok"></div>
+    <div class="subcribe">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 subcribe__title">
+            <h2>ПОЛУЧАЙТЕ СКИДКИ И ПОДАРКИ</h2>
+          </div>
+          <div class="col-3 subcribe__email">
+            <input class="subcribe__email" type="email" name="email" value="" placeholder="Ваш email"/>
+            </form>
+          </div>
+          <div class="col-3 subcribe__button">
+            <button type="button" class="btn btn-lg btn-primary my-button">
+              ПОДПИСАТЬСЯ
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
-
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
+    <div class="new-items">
+      <div class="container new-items__container">
+        <h2 class="new-items__title">СКИДКИ ДО 90%</h2>
+        <div class="row">
+          <div class="col-3 new-items__cards">
+            <img class="new-items__cards-model" src="img/model.png" />
+            <h3 class="new-items__cards-title">Коктейльное платье</h3>
+            <h3 class="new-items__cards-price">₽ 40 000</h3>
+          </div>
+          <div class="col-3 new-items__cards">
+            <img class="new-items__cards-model" src="img/model.png" />
+            <h3 class="new-items__cards-title">Коктейльное платье</h3>
+            <h3 class="new-items__cards-price">₽ 40 000</h3>
+          </div>
+          <div class="col-3 new-items__cards">
+            <img class="new-items__cards-model" src="img/model.png" />
+            <h3 class="new-items__cards-title">Коктейльное платье</h3>
+            <h3 class="new-items__cards-price">₽ 40 000</h3>
+          </div>
+          <div class="col-3 new-items__cards">
+            <img class="new-items__cards-model" src="img/model.png" />
+            <h3 class="new-items__cards-title">Коктейльное платье</h3>
+            <h3 class="new-items__cards-price">₽ 40 000</h3>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="btn btn-lg btn-primary my-button button-new-items"
+        >
+          ВСЕ МОДЕЛИ →
+        </button>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container footer-container">
+        <div class="row">
+          <div class="col-4 footer__left">
+            <div class="footer-left__image-title">
+              <img class="footer-left__image-logo" src="img/logo-img.png" />
+              <p class="footer-left__title">THE LOOP</p>
+            </div>
+            <p class="footer-left__discription">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              faucibus egestas elit, at eleifend elit ornare ut
+            </p>
+          </div>
+          <div class="col-2 footer__right">
+            <p class="footer__right-title">ОСНОВНЫЕ ССЫЛКИ</p>
+            <p class="footer__right-text">О компании</p>
+            <p class="footer__right-text">Каталог</p>
+            <p class="footer__right-text">Доставка</p>
+            <p class="footer__right-text">Oплата</p>
+          </div>
+          <div class="col-2 footer__right">
+            <p class="footer__right-title">КАТЕГОРИИ</p>
+            <p class="footer__right-text">Мужская одежда</p>
+            <p class="footer__right-text">Женская одежда</p>
+            <p class="footer__right-text">Детская одежда</p>
+            <p class="footer__right-text">Для животных</p>
+          </div>
+          <div class="col-2 footer__right">
+            <p class="footer__right-title">ПОЛЕЗНЫЕ ССЫЛКИ</p>
+            <p class="footer__right-text">Таблица размеров</p>
+            <p class="footer__right-text">Блог о моде</p>
+            <p class="footer__right-text">Наша миссия</p>
+          </div>
+          <div class="col-2 footer__right">
+            <p class="footer__right-title">СОЦ. СЕТИ</p>
+            <p class="footer__right-text">VK.com</p>
+            <p class="footer__right-text">Facebook</p>
+            <p class="footer__right-text">Instagram</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p>Copyright © 2019. Все права защищены</p>
+        <p>Политика приватности</p>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
